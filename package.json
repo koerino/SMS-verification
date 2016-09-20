@@ -1,0 +1,30 @@
+{
+  "name": "sms-verification",
+  "version": "1.0.0",
+  "description": "Verify accounts with SMS codes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koerino/SMS-verification.git"
+  },
+  "author": "K.K.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koerino/SMS-verification/issues"
+  },
+  "homepage": "https://github.com/koerino/SMS-verification#readme",
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.2",
+    "connect-flash": "^0.1.1",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "mongoose": "^4.6.0",
+    "morgan": "^1.7.0",
+    "pug": "^2.0.0-beta6",
+    "twilio": "^2.10.0"
+  }
+}

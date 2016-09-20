@@ -1,0 +1,25 @@
+extends index
+
+block content
+  
+  h5.form-title Verify Your Account
+  
+  // account verification form
+  form(action='/users/' + id + '/verify', method='POST')
+    .form-group
+        label(for='code') Verification Code:
+        input.form-control.form-control-20(type='text', name='code')
+        small The code has been sent to your mobile.
+
+        
+    .btn-container.center
+        button.btn.btn-primary(type='submit') Submit
+
+    // request to resend verification code
+  form(action='/users/' + id + '/resend', method='POST')
+    .form-group
+        .resend-btn-container.center
+            button.btn.btn-warning(type='submit') Resend Code
+        
+    .link-container.center
+        a(href='/') Back to Home Page

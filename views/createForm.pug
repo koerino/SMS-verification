@@ -1,0 +1,29 @@
+extends index
+
+block content
+  
+  h5.form-title Create Your Account
+  
+  // user signup form
+  form(action='/users/new', method='POST')
+    .form-group
+        label(for='username') Username:
+        input.form-control.form-control-20(type='text', name='username' required)
+        
+    .form-group
+        label(for='email') Email:
+        input.form-control.form-control-20(type='email', name='email' required)
+   
+    .form-group
+        label(for='password') Password:
+        input.form-control.form-control-20(type='password', name='password', minlength='8' required)
+
+    .form-group
+        label(for='phone') Mobile: (10-digit e.g. 1234567890)
+        input.form-control.form-control-20(type='text', name='phone', pattern='[0-9]{10}' required)
+
+    .btn-container.center
+        button.btn.btn-primary(type='submit') Create Account
+        
+    .link-container.center
+        a(href='/') Had an account? Log in!
