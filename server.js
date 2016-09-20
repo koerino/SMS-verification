@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({
 
 // log HTTP errors
 logger('combined', {
-  skip: (req, res) => { return res.statusCode < 400 }
+    skip: (req, res) => { return res.statusCode < 400; }
 });
 
 // used for flash messages
